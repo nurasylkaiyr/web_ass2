@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row bg-dark">
+          <h1 class="zg">Weather Information</h1>
+          <div class="col-sm-3">
+            <div class="input-group ">
+                <input type="text" name="city" class="form-control" placeholder="Введите название города" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button class="btn btn-outline-warning" type="button" id="form_map">Найти </button>
+            </div>
+            <div class="weather">
+      
+              <div class="weather__info none">
+                  <!-- <img src="http://openweathermap.org/img/w/01n.png" alt="Weather" class="weather__img"> -->
+                  <div class="weather__temp">22°c</div>
+                  <div class="weather__city">New York</div>
+                  <div class="weather__discription">cloudy</div>
+              </div>
+      
+              <section class="weather__details none">
+                  <section class="details">
+                      
+                      <i class="details__img bi bi-droplet"></i>
+                      <div class="details__value" id="humidity">50 %</div>
+                      <div class="details__title">Humidity</div>
+                  </section>
+      
+                  <section class="details">
+                   
+                      <i class="details__img bi bi-wind"></i>
+                      <div class="details__value" id="speed">10 м/с</div>
+                      <div class="details__title">Wind Speed</div>
+                  </section>
+                  
+              </section>
+
+              <section class="weather__details none">
+                <section class="details">
+    
+                    <i class="details__img bi bi-thermometer-snow"></i>
+                    <div class="details__value" id="feels_like">25 &deg C</div>
+                    <div class="details__title">Feels Like</div>
+                </section>
+    
+                <section class="details">
+                  
+                  <i class="details__img bi bi-speedometer"></i>
+                    <div class="details__value" id="pressure">5 hPa</div>
+                    <div class="details__title">Pressure</div>
+                </section>
+                
+            </section>
+            <section class="weather__details none">
+              <section class="details">
+              
+                  <i class="details__img bi bi-cloud-drizzle"></i>
+                  <div class="details__value" id="rain3h">0 mm</div>
+                  <div class="details__title">Rain 3h</div>
+              </section>
+  
+              <section class="details">
+               
+                <i class="details__img bi bi-globe"></i>
+                  <div class="details__value" id="index">200</div>
+                  <div class="details__title">Index</div>
+              </section>
+              
+          </section>
+      
+            </div>
+          </div>
+          <div class="col-sm-8 mt-5">
+            <div id="map"></div>
+          </div>
+        </div>
+        <div class="row bg-dark">
+          <h1 class="zg">News</h1>
+          <div id="output"></div>
+          <p id="copyright"></p>
+        </div>
+  </div>
+          <script src="https://api-maps.yandex.ru/2.1/?apikey=e893ba67-1128-425b-ba83-a5a6be13872d&lang=ru_RU"></script>
+          <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+          <script src="/javascripts/index.js"></script>
+          <script src="/javascripts/news.js"></script>
+
+</body>
+</html>
